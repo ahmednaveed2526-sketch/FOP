@@ -33,9 +33,9 @@ public class RentalManager {
         return total;
     }
 
-    // --- NEW: Exception Handling Method ---
+
     public double rentVehicle(String vehicleId, int days) throws RentalException {
-        // 1. Check for invalid days
+
         if (days <= 0) {
             throw new RentalException("Error: Rental days must be greater than 0!");
         }
@@ -48,21 +48,20 @@ public class RentalManager {
             }
         }
 
-        // 2. Check if vehicle exists
+
         if (foundVehicle == null) {
             throw new RentalException("Error: Vehicle with ID " + vehicleId + " not found!");
         }
 
-        // 3. Check if vehicle is already rented
+ 
         if (!foundVehicle.isAvailable()) {
             throw new RentalException("Error: Vehicle " + vehicleId + " is already rented out!");
         }
 
-        // If all checks pass, rent the vehicle
+
         foundVehicle.setAvailable(false);
         return foundVehicle.calculateRentalPrice(days);
-    }
-        // Add this so the GUI can read the fleet list
+   
     public ArrayList<Vehicle> getFleet() {
         return fleet;
     }
