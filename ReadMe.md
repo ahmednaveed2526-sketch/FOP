@@ -4,3 +4,4 @@ Member 4 (Fathima Asma): RentalManager.java (Array , Loops & Exception handling)
 Member 6 (Azam): Main.java - This is the file that starts the entire application. It creates the RentalManager (which handles all the vehicle data and rental logic), then creates the RentalGUI (the visual window the user sees), and connects them together so they can work as one system.
 Member 3 (Rashad): RentalException.java ( Custom Error) 
 Member 1 (haamidh) :vehicle.java (Abstruction/Encapsulation)
+Member 2: (Yasir): Car.java, Motorcycle.java, Truck.java (The Children - Inheritance & Polymorphism)
